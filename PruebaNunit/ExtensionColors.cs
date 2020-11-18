@@ -10,7 +10,9 @@ using Utilidades;
 namespace PruebaNunit
 {
   [TestFixture]
-  public class Class1
+  [Author("JCALERO")]
+  [Category("ALL")]
+  public class ExtensionColors
   {
     // public Color color;
 
@@ -20,7 +22,7 @@ namespace PruebaNunit
 
     }
 
-    [Test]
+    [TestCase(Author = "JCalero")]
     public void NUnitIsBlueAprimaryColorTest()
     {
       //Arrange
@@ -35,7 +37,9 @@ namespace PruebaNunit
       Assert.AreEqual(expected, actual);
 
     }
-    [Test]
+    [TestCase]
+    [Author("JCALERO")]
+
     public void NUnitIsOrangeAprimaryColorTest()
     {
       //Arrange

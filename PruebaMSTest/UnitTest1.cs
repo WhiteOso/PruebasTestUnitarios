@@ -5,6 +5,7 @@ using Utilidades;
 namespace PruebaMSTest
 {
   [TestClass]
+  [TestCategory("ALL")]
   public class UnitTest1
   {
     [TestMethod]
